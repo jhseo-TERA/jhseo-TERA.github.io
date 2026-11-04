@@ -1,0 +1,88 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "textbook/*.qmd"
+    - "notes/*.qmd"
+  resources:
+    - assets/
+    - CNAME
+
+lang: ko
+
+website:
+  title: "Analog IC Design · jhseo-TERA"
+  description: "Analog IC Design을 공부하고 교재로 정리하는 jhseo-TERA의 개인 아카이브."
+  site-url: https://analog.jhseo-archive.com/
+  favicon: assets/favicon.svg
+  repo-url: https://github.com/jhseo-TERA/jhseo-TERA.github.io
+  repo-actions: [edit]
+  page-navigation: true
+  back-to-top-navigation: true
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    title: 'jhseo-TERA <span class="brand-separator">/</span> <span class="brand-sub">archive · analog</span>'
+    background: light
+    collapse-below: lg
+    left:
+      - href: textbook/index.qmd
+        text: 교재
+      - href: notes/index.qmd
+        text: 학습 노트
+      - href: references.qmd
+        text: 참고자료
+    right:
+      - href: about.qmd
+        text: 소개
+      - icon: github
+        href: https://github.com/jhseo-TERA/jhseo-TERA.github.io
+        aria-label: GitHub 저장소
+  sidebar:
+    - id: textbook
+      title: 교재
+      style: docked
+      background: none
+      collapse-level: 2
+      contents:
+        - href: textbook/index.qmd
+          text: 교재 안내
+        - section: "01 · 소자와 동작점"
+          contents:
+            - href: textbook/01-operating-point.qmd
+              text: 동작점에서 시작하기
+  page-footer:
+    left: "© 2026 jhseo-TERA · Analog IC Design"
+    right:
+      - text: 이 사이트에 대하여
+        href: about.qmd
+      - text: GitHub
+        href: https://github.com/jhseo-TERA/jhseo-TERA.github.io
+
+format:
+  html:
+    theme:
+      light: [cosmo]
+      dark: [darkly]
+    css: styles.css
+    mainfont: "Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif"
+    monofont: "'Cascadia Code', Consolas, monospace"
+    toc: true
+    toc-title: 이 페이지에서
+    toc-depth: 3
+    anchor-sections: true
+    code-copy: true
+    code-overflow: wrap
+    html-math-method: mathjax
+    lightbox: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    grid:
+      sidebar-width: 245px
+      body-width: 810px
+      margin-width: 220px
+
+execute:
+  enabled: false

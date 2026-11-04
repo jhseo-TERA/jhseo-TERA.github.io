@@ -1,0 +1,24 @@
+---
+title: "참고자료"
+subtitle: "자료의 출처를 따라 읽기"
+sidebar: false
+---
+
+공부하면서 참고한 자료를 정리하는 공간입니다. 아래 강의는 이 사이트를 구상할 때 참고한 자료입니다.
+
+## Analog IC Design
+
+### Analog (Integrated) Circuit Design · JKU
+
+Harald Pretl 및 공동 저자의 공개 강의 자료입니다.
+소자, 기본 회로와 회로 설계 과정을 공부할 때 참고할 수 있습니다.
+
+- [강의 읽기](https://iic-jku.github.io/analog-circuit-design/aicd.html)
+- [강의 저장소](https://github.com/iic-jku/analog-circuit-design)
+
+## 자료를 추가할 때
+
+저자와 제목, 자료로 연결되는 링크를 함께 남깁니다.
+어느 장을 읽었는지, 어떤 질문에 도움이 됐는지를 짧게 적어 두면 다시 찾기 쉽습니다.
+
+인용한 내용과 직접 쓴 설명을 구분하고, 그림이나 표를 가져오는 경우에는 해당 자료의 이용 조건과 출처를 함께 기록합니다.
